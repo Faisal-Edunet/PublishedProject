@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            width: 90px;
+            height: 90px;
+            margin: 15px;
+            display: inline-block;
+            background: #56b6e5;
+            border-radius: 10px;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s;
+            text-align: center;
+            line-height: 90px;
+            color: #fff;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 1.1em;
+        }
+
+        .scale:hover {
+            transform: scale(1.35);
+            background: #7fe381;
+        }
+
+        .rotate:hover {
+            transform: rotate(25deg);
+            background: #dc90e2;
+        }
+
+        .translate:hover {
+            transform: translate(40px, 10px);
+            background: #ffd355;
+        }
+
+        .skew:hover {
+            transform: skew(30deg, 10deg);
+            background: #ff7e79;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box scale">Scale</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box translate">Translate</div>
+    <div class="box skew">Skew</div>
+</body>
+
+</html>

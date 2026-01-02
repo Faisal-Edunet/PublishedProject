@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables Example</title>
+  <style>
+    /* Define variables in :root (global scope) */
+    :root {
+      --main-bg-color: rgb(175, 213, 224);
+      --main-text-color: rgb(175, 24, 24);
+      --mainbordercolor: rgb(24, 175, 75);
+    }
+
+    body {
+      background-color: var(--main-bg-color);
+      color: var(--main-text-color);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    button {
+      background-color: var(--main-text-color);
+      color: var(--main-bg-color);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: var(--main-bg-color);
+      color: var(--main-text-color);
+      border: 2px solid var(--main-text-color);
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Variables Demo</h1>
+  <p>This text uses CSS variables for colors.</p>
+  <button>Hover me!</button>
+</body>
+</html>

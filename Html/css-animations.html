@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .animate-box {
+            width: 100px;
+            height: 100px;
+            background: #56b6e5;
+            border-radius: 12px;
+            position: relative;
+            animation: move-and-color 2s ease-in-out infinite  alternate;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 100px;
+            font-family: sans-serif;
+            color: #fff;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        /* Animation sequence */
+        @keyframes move-and-color {
+            0% {
+                left: 0;
+                background: #56b6e5;
+            }
+
+            50% {
+                left: 120px;
+                background: #ffd355;
+            }
+
+            100% {
+                left: 240px;
+                background: #e3817f;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animate-box">Animated!</div>
+</body>
+
+</html>
